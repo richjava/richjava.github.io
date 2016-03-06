@@ -1,0 +1,180 @@
+{
+    "name": "Richard Lovell",
+    "description": "Web developer",
+    "email": "richjavalabs@gmail.com",
+    "location": {
+        "city": "Christchurch",
+        "country": "New Zealand"
+    },
+    "education": [
+        {
+            "school": "Massey University",
+            "location": {
+                "city": "Palmerston North (extramural)",
+                "country": "New Zealand"
+            },
+            "start_date": "2008-03",
+            "end_date": "deferred",
+            "degrees": [
+                {
+                    "title": "Bachelor of Information Science (deferred)"
+                }
+            ]
+        },
+        {
+            "school": "Otago University",
+            "location": {
+                "city": "Dunedin",
+                "country": "New Zealand"
+            },
+            "start_date": "2001-03",
+            "end_date": "2003-11",
+            "degrees": [
+                {
+                    "title": "Bachelor of Commerce",
+                    "major": "Marketing"
+                }
+            ]
+        },
+        {
+            "school": "Otago Boys High School",
+            "location": {
+                "city": "Dunedin",
+                "country": "New Zealand"
+            },
+            "start_date": "1999-03",
+            "end_date": "2000-11"
+        }
+    ],
+    "employment": {
+        "coding": [
+            {
+                "organization": "Hotpott Ltd",
+                "url": "https://hotpott.com",
+                "title": "Founder",
+                "description": "Hotpott is no longer online. It was a regional and language-based social and shopping network for people living in Taiwan. Designed and built from the bottom up with custom social-networking functionality (friend requests, feed, etc.), messaging system, fully-featured custom-built shopping network with shopping cart, favourites and feedback functionality, and checkout. Third party API integration includes Facebook, Flickr, Youtube, Amazon Web Services, and Paypal.",
+                "start_date": "2011-10-01",
+                "end_date": "2014-08-15"
+            }
+        ],
+        "teaching": [
+            {
+                "organization": "ACG Yoobee School of Design",
+                "url": "https://yoobee.ac.nz",
+                "title": "Head of Department, Web",
+                "description": "Teaching practical web design and development skills.",
+                "start_date": "2014-09",
+                "end_date": null
+            },
+            {
+                "organization": "Various English schools",
+                "url": null,
+                "title": "English teacher",
+                "description": "Teaching English to all-ages and levels. Initially full-time and then part-time as a means to finance my education in information technology.",
+                "start_date": "1997-03",
+                "end_date": "2014-07"
+            }
+        ]
+    },
+    "profiles": {
+        "github": {
+            "username": "richjava",
+            "profile_url": "https://github.com/richjava"
+        },
+        "facebook": {
+            "username": "richard.lovell.589",
+            "profile_url": "https://www.facebook.com/richard.lovell.589"
+        },
+        "meetup": {
+            "username": "richjava",
+            "profile_url": "http://www.meetup.com/members/182484136/"
+        },
+        "twitter": {
+            "username": "richjavalabs",
+            "profile_url": "https://twitter.com/richjavalabs"
+        },
+        "youtube": {
+            "username": "Rich Java Labs",
+            "profile_url": "https://www.youtube.com/channel/UCfO4-6y0pKo_H1bYyFB60jQ"
+        },
+        "blog": [{
+                "username": "richjava",
+                "profile_url": "https://richjava.wordpress.com/"
+            },
+            {
+                "username": "cruisytaiwan",
+                "profile_url": "https://cruisytaiwan.wordpress.com/"
+            }
+        ]
+
+    },
+    "projects": [
+        {
+            "title": "Soap Lye Calculator (Android app)",
+            "description": "Soap Lye Calculator is a utility app for soap makers. Features include one-touch emailing of soaps, extensive use of dynamically created views to enhance user experience, and CRUD functionality. It is fully internationalized in English and Chinese.",
+            "url": "https://play.google.com/store/apps/details?id=com.soaperscalculator.app"
+        },
+        {
+            "title": "Lotion Maker (Android app)",
+            "description": "Lotion Maker makes creating and managing lotions easy. Features include a content management system for managing your inventory of oils, solvents, emulsifiers, and products, batch proportion change functionality, drag-and-drop positioning of phases, ingredients and samples, categorization of product ingredients, emailing of lotion recipes with an easy-to-read tabular format html file and a .csv file (you can open and edit .csv files in Microsoft Excel), save lotion recipes to .csv and .html files on your device, editable sample lotions to make getting started easier, recipes automatically saved into your list, and configurable in ounces and grams.",
+            "url": "https://play.google.com/store/apps/details?id=com.richjavalabs.lotionmaker.app&hl=en"
+        },
+        {
+            "title": "Golf Rules Daydream (Android app)",
+            "description": "Golf Rules Daydream is a slideshow of golf rules that plays automatically while your phone is charging or docked. Features of the app include functionality for navigation through either main rules or sub-rules, a separate screen displaying time, date and battery charge level, screen burn protection, state and preference management, and three custom themes.",
+            "url": "https://play.google.com/store/apps/details?id=com.richjavalabs.golfrulesdaydream.app"
+        },
+        {
+            "title": "Code Meanings (Android app)",
+            "description": "Code Meanings is an Android app to manage code snippets and their meanings. The project is an introduction to cloud storage, with two separate implementations. It runs on Android Lollipop.",
+            "url": "https://github.com/richjava/code-meanings"
+        },
+        {
+            "title": "Hotpott (website)",
+            "description": "Hotpott is no longer online. It was a regional and language-based social and shopping network for people living in Taiwan. Designed and built from the bottom up with custom social-networking functionality (friend requests, feed, etc.), messaging system, fully-featured custom-built shopping network with shopping cart, favourites and feedback functionality, and checkout. Third party API integration includes Facebook, Flickr, Youtube, Amazon Web Services, and Paypal.",
+            "url": "https://www.youtube.com/channel/UCaQxkkBsXhFS-K4p19fTSJQ"
+        },
+        {
+            "title": "Noted (website)",
+            "description": "Noted is a utility web application for English teachers to efficiently write student reports. It is written in PHP and produces HTML and PDF reports.",
+            "url": "https://github.com/advanced-js/syllabus"
+        },
+        {
+            "title": "ZK Chat (web app)",
+            "description": "A chat application developed with ZK AJAX framework. Features include instant messaging and session management.",
+            "url": "https://github.com/richjava/ZK-Chat"
+        }
+    ],
+    "writing": [
+        {
+            "title": "Custom ZK Native components",
+            "type": "tutorial",
+            "date": "2010-12-05",
+            "url": "https://richjava.wordpress.com/2011/12/05/custom-zk-native-components/"
+        },
+        {
+            "title": "Don’t get heavy with ZK",
+            "type": "blog",
+            "date": "2010-12-05",
+            "url": "https://richjava.wordpress.com/2011/12/05/dont-get-heavy-with-zk/"
+        },
+        {
+            "title": "ZK Chat with IM and session management",
+            "type": "tutorial",
+            "date": "2010-11-22",
+            "url": "https://richjava.wordpress.com/2010/11/22/zk-chat-with-im-and-session-management/"
+        },
+        {
+            "title": "Servlets and the web container",
+            "type": "tutorial",
+            "date": "2010-10-14",
+            "url": "https://richjava.wordpress.com/2010/10/14/servlets-and-the-web-container/"
+        },
+        {
+            "title": "Servlets : An analogy",
+            "type": "blog",
+            "publish_date": "2010-10-09",
+            "url": "https://richjava.wordpress.com/2010/10/09/analogy-servlets/"
+        }
+    ]
+}
