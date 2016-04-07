@@ -84,10 +84,12 @@
         },"jsfiddle": {
             "username": "richjava",
             "profile_url": "http://jsfiddle.net/user/richjava/fiddles/"
-        },
-        "youtube": {
+        },"youtube": {
             "username": "Rich Java Labs",
             "profile_url": "https://www.youtube.com/channel/UCfO4-6y0pKo_H1bYyFB60jQ"
+        },"linkedin": {
+            "username": "rilovell",
+            "profile_url": "https://tw.linkedin.com/in/rilovell"
         },"blog": [{
                 "username": "richjava",
                 "profile_url": "https://richjava.wordpress.com/"
