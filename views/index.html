@@ -1,0 +1,51 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: http://mozilla.github.io/nunjucks/ -->
+<!-- jade: http://jade-lang.com/ -->
+<!-- haml: http://haml.info/tutorial.html -->
+<!-- hbs(handlebars): http://handlebarsjs.com/expressions.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to HyperDev!</title>
+    <meta name="description" content="A cool thing made with HyperDev">
+    <link id="favicon" rel="icon" href="https://hyperdev.com/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <!-- HTML adapted from https://codepen.io/gkioultsin/pen/pcbHI?editors=1010 -->
+<div class="calc">
+	<input class="calc__screen" value="0"/>
+	<div class="buttons">
+    <button id="clear-btn" class="btn clear-btn" value="">C</button>
+    <button id="backspace-btn" class="btn">⬅</button>
+    <button id="sign-btn" class="btn">±</button>
+    <button value="/" class="operator btn">÷</button>
+    <button class="digit btn" value="7">7</button>
+    <button class="digit btn" value="8">8</button>
+    <button class="digit btn" value="9">9</button>
+    <button value="*" class="operator btn">×</button>
+    <button class="digit btn" value="4">4</button>
+    <button class="digit btn" value="5">5</button>
+    <button class="digit btn" value="6">6</button>
+    <button value="-" class="operator btn">-</button>
+    <button class="digit btn" value="1">1</button>
+    <button class="digit btn" value="2">2</button>
+    <button class="digit btn" value="3">3</button>
+    <button value="+" class="operator btn">+</button>
+    <button class="digit btn" value="0">0</button>
+    <button class="digit btn" value=".">.</button>
+    <button id="equal" class="btn equals-btn">=</button>
+    </div>
+</div>
+
+    <script src="/client.js"></script>
+
+  </body>
+</html>
