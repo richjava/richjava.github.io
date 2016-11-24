@@ -133,6 +133,10 @@
             "url": "https://github.com/richjava/code-meanings"
         }],
         "Websites": [{
+            "title": "Soaperbase",
+            "description": "A handy soap lye calculator to make bar (NaOH), liquid (KOH), or mixed soaps. Soaperbase Soap Lye Calculator accurately calculates required lye amounts, the estimated amount of liquids, and the soap's composition and properties. The soap calculator includes features necessary for professional soap making.",
+            "url": "http://soaperbase.com"
+        },{
             "title": "Hotpott (website)",
             "description": "Hotpott is no longer online. It was a regional and language-based social and shopping network for people living in Taiwan. Designed and built from the bottom up with custom social-networking functionality (friend requests, feed, etc.), messaging system, fully-featured custom-built shopping network with shopping cart, favourites and feedback functionality, and checkout. Third party API integration includes Facebook, Flickr, Youtube, Amazon Web Services, and Paypal.",
             "url": "https://www.youtube.com/channel/UCaQxkkBsXhFS-K4p19fTSJQ"
