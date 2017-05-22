@@ -12,6 +12,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
         <style>
             * { box-sizing: border-box; }
+            nav{padding: 24px;}
+            nav h2{font-size:16px; margin:0;}
             .video-background {
                 background: #000;
                 position: fixed;
@@ -51,21 +53,56 @@
     </head>
     <body>
         <ul id="slide-out" class="side-nav">
-            <li><div class="userView">
-                    <div class="background">
-                        <img src="images/office.jpg">
-                    </div>
-                    <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
-                    <a href="#!name"><span class="white-text name">John Doe</span></a>
-                    <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
-                </div></li>
-            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-            <li><a href="#!">Second Link</a></li>
-            <li><div class="divider"></div></li>
-            <li><a class="subheader">Subheader</a></li>
-            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            <nav class="black">
+                <div class="nav-wrapper">
+                    <h2>
+                        Yoobee Video Player
+                    </h2>
+                </div>
+            </nav>
+            <div style="margin:20px">
+                <div class="row">
+                    <form>
+                        <div class="row">
+                            <label for="first_name">Youtube Playlist ID</label>
+                            <input placeholder="i.e. PLFgquLnL59amN9tYr7o2a60yFUfzQO3sU" id="playlist-id" type="text">
+                        </div>
+                        <div class="row">
+                            <input type="checkbox" id="test5" />
+                            <label for="test5">Show video details</label>
+                        </div>
+                        <div class="row">
+                            <a class="waves-effect waves-light btn">Done</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <a class="waves-effect waves-light btn">Change playlist</a>
+                </div>
+                <div style="text-align:center; padding: 50px 0">
+                    <i style="font-size: 76px; cursor:pointer;" class="material-icons black-text">play_circle_outline</i>
+                </div>
+                <div style="text-align:center; padding: 50px 0">
+                    <i style="font-size: 76px; cursor:pointer;" class="material-icons black-text">pause_circle_outline</i>
+                </div>
+            </div>
+            <!--            <li><div class="userView">
+                                <div class="background">
+                                    <img src="images/office.jpg">
+                                </div>
+                                <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+                                <a href="#!name"><span class="white-text name">John Doe</span></a>
+                                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                            </div></li>
+                        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                        <li><a href="#!">Second Link</a></li>
+                        <li><div class="divider"></div></li>
+                        <li><a class="subheader">Subheader</a></li>
+                        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>-->
         </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div style="padding:20px;">
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons white-text">menu</i></a>
+        </div>
         <div class="video-background">
             <div class="video-foreground">
                 <div id="gangnamStyleIframe"></div>
@@ -115,12 +152,6 @@
             var player;
             function onYouTubeIframeAPIReady() {
                 player = new YT.Player('gangnamStyleIframe', {
-                    height: '315',
-                    width: '560',
-                    videoId: '9bZkp7q19f0',
-                    playerVars: {
-                        controls: '2'
-                    },
                     events: {
                         'onReady': onPlayerReady,
                         'onStateChange': onPlayerStateChange
@@ -133,7 +164,7 @@
             var playerState;
             function onPlayerStateChange(event) {
                 playerState = event.data == YT.PlayerState.ENDED ? '종료됨' :
-                        event.data == YT.PlayerState.PLAYING ? '재생 중' :
+                        event.data == YT.PlayerState.PLAYING ? 'playing' + player.getVideoData().title :
                         event.data == YT.PlayerState.PAUSED ? '일시중지 됨' :
                         event.data == YT.PlayerState.BUFFERING ? '버퍼링 중' :
                         event.data == YT.PlayerState.CUED ? '재생준비 완료됨' :
