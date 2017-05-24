@@ -33,8 +33,8 @@
                 top: 0;
                 color: #fff;
             }
-            .vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
-            .vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+            .vid-info { position: absolute; top: 0; right: 0; width: 80%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+            .vid-info h1 { font-size: 2rem; font-weight: 700; margin: 0; line-height: 1.2; }
             .vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
             @media (min-aspect-ratio: 16/9) {
                 .video-foreground { height: 300%; top: -100%; }
@@ -62,17 +62,17 @@
             </nav>
             <div style="margin:20px">
                 <div class="row">
-                    <form>
+                    <form id="playlist-form" onsubmit="return loadPlaylist_playlist_id()">
                         <div class="row">
-                            <label for="first_name">Youtube Playlist ID</label>
-                            <input placeholder="i.e. PLFgquLnL59amN9tYr7o2a60yFUfzQO3sU" id="playlist-id" type="text">
+                            <label for="playlistId">Youtube Playlist ID</label>
+                            <input placeholder="i.e. PLFgquLnL59amN9tYr7o2a60yFUfzQO3sU" id="playlistId" type="text" required="true">
                         </div>
                         <div class="row">
                             <input type="checkbox" id="test5" />
                             <label for="test5">Show video details</label>
                         </div>
                         <div class="row">
-                            <a class="waves-effect waves-light btn">Done</a>
+                            <button class="btn waves-effect waves-light submit" type="submit" name="action">Done</button>
                         </div>
                     </form>
                 </div>
@@ -112,38 +112,34 @@
 
         <div id="vidtop-content">
             <div class="vid-info">
-                <h1>YouTube Fullscreen Background Demo</h1>
-                <p>The International Space Station orbits the Earth every 92 minutes, with its crew seeing a sunrise 15 times a day. It exists as a scientific, educational, and engineering platform in low orbit, 330 to 435 kilometres above the Earth.
+                <h1 id="videoTitle"></h1>
+<!--                <p>The International Space Station orbits the Earth every 92 minutes, with its crew seeing a sunrise 15 times a day. It exists as a scientific, educational, and engineering platform in low orbit, 330 to 435 kilometres above the Earth.
                 <p>Original timelapse by Riccardo Rossi (ISAA), used under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Raw photos courtesy of http://eol.jsc.nasa.gov/
-                    <a href="/500/Use-YouTube-Videos-as-Fullscreen-Web-Page-Backgrounds">Full article</a>
+                    <a href="/500/Use-YouTube-Videos-as-Fullscreen-Web-Page-Backgrounds">Full article</a>-->
             </div>
         </div>
         <div id="gangnamStyleIframe"></div>
 
 
 
-        <button type="button" onclick="playYoutube();">Play</button>
-
-
-        <button type="button" onclick="pauseYoutube();">Pause</button>
-
-
-        <button type="button" onclick="stopYoutube();">Stop</button>
-
-
-        <button type="button" onclick="loadPlaylist();">player.loadPlaylist</button>
-
-
-        <button type="button" onclick="loadPlaylist_playlist_id();">player.loadPlaylist - playlist ID</button>
-
-
-        <button type="button" onclick="loadPlaylist_video_ids();">player.loadPlaylist - video IDs</button>
+        <!--        <button type="button" onclick="playYoutube();">Play</button>
+        
+        
+                <button type="button" onclick="pauseYoutube();">Pause</button>
+        
+        
+                <button type="button" onclick="stopYoutube();">Stop</button>
+        
+        
+                <button type="button" onclick="loadPlaylist();">player.loadPlaylist</button>
+        
+        
+                <button type="button" onclick="loadPlaylist_playlist_id();">player.loadPlaylist - playlist ID</button>
+        
+        
+                <button type="button" onclick="loadPlaylist_video_ids();">player.loadPlaylist - video IDs</button>-->
 
         <script type="text/javascript">
-
-
-
-
             var tag = document.createElement('script');
             tag.src = "http://www.youtube.com/iframe_api";
             var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -170,6 +166,10 @@
                         event.data == YT.PlayerState.CUED ? '재생준비 완료됨' :
                         event.data == -1 ? '시작되지 않음' : '예외';
 
+                if (event.data == YT.PlayerState.PLAYING) {
+                    var data = player.getVideoData();
+                    $('#videoTitle').text(player.getVideoData().title);
+                }
                 console.log('onPlayerStateChange 실행: ' + playerState);
             }
 
@@ -188,6 +188,7 @@
                 player.loadPlaylist(['wcLNteez3c4', 'LOsNP2D2kSA', 'rX372ZwXOEM'], 0, 0, 'large');
             }
             function loadPlaylist_playlist_id() {
+                $('.button-collapse').sideNav('hide');
                 player.loadPlaylist({
                     'list': 'PLFgquLnL59amN9tYr7o2a60yFUfzQO3sU',
                     'listType': 'playlist',
@@ -208,7 +209,7 @@
 
         </script>
         <!--Import jQuery before materialize.js-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>     
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
         <script>
             $(function () {
