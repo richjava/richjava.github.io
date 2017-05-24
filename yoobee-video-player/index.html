@@ -131,10 +131,24 @@
                         }
                         loadPlaylist(playListId);
                     }
+                    var isEnded = 0;
+                    function testIfOver() {
+                        if (isEnded === 1) { // Did the state change while we delayed 5 seconds
+                            loadPlaylist(localStorage.getItem("playlistId"));
+                        }
+                    }
                     function onPlayerStateChange(event) {
-                        if (event.data == YT.PlayerState.PLAYING) {
-                            var data = player.getVideoData();
-                            $('#videoTitle').text(player.getVideoData().title);
+                        switch (event.data) {
+                            case YT.PlayerState.ENDED:
+                                isEnded = 1;
+                                var myVar = setTimeout(function () {
+                                    testIfOver()
+                                }, 5000);  // Delay 5 seconds to make sure we aren't loading another video 
+                                break;
+                            case YT.PlayerState.PLAYING:
+                                isEnded = 0; // we started playing another vid in the playlist
+                                $('#videoTitle').text(player.getVideoData().title);
+                                break;
                         }
                     }
                     function play() {
