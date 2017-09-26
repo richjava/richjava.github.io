@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jen</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fff;
+            -webkit-transition: background-color 500ms linear;
+            -o-transition: background-color 500ms linear;
+            transition: background-color 500ms linear;
+        }
+
+        .container {
+            height: 90vh;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10vw;
+        }
+
+        .row {
+            width: 100%;
+            text-align: center;
+        }
+
+        .descriptor {
+            font-family: 'Lobster', cursive;
+            color: white;
+            font-size: 10vw;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container">
+        <div class="row">
+            <h1 class="descriptor"></h1>
+        </div>
+    </div>
+    <script>
+        var screens = [
+            { descriptor: 'Great listener', bgColor: '#DD2C00' },
+            { descriptor: 'Wise', bgColor: '#FFAB00' },
+            { descriptor: 'Easy to talk to', bgColor: '#AEEA00' },
+            { descriptor: 'Warm', bgColor: '#FF6D00' },
+            { descriptor: 'Authentic', bgColor: '#00B8D4' },
+            { descriptor: 'Kind', bgColor: '#2962FF' },
+            { descriptor: 'Supportive', bgColor: '#00BFA5' },
+            { descriptor: 'Calm', bgColor: '#6200EA' },
+            { descriptor: 'Caring', bgColor: '#00C853' },
+            { descriptor: 'Natural leader', bgColor: '#FFD600' },
+            { descriptor: 'Gentle strength', bgColor: '#64DD17' },
+            { descriptor: 'Clever', bgColor: '#C51162' },
+            { descriptor: 'Intelligent', bgColor: '#0091EA' },
+            { descriptor: 'Chilled out coaching style', bgColor: '#AA00FF' }
+        ];
+        var descriptorEl = document.querySelector('.descriptor');
+        var interval = 3000;
+        var intervalId;
+        var index = 0;
+        descriptorEl.addEventListener('click', function () {
+            console.log('interval = ' + interval)
+            if (interval === 3000) {
+                document.body.style.transition = 'none';
+                interval = 200;
+            } else {
+                document.body.style.transition = 'background-color 500ms linear';
+                interval = 3000;
+            }
+            //interval = interval === 3000 ? 100 : 3000;
+            clearInterval(intervalId);
+            start(interval);
+        });
+
+        // function randomInt(min, max) {
+        //     return Math.floor(Math.random() * (max - min + 1) + min);
+        // }
+
+        function changeScreen() {
+            //var randIndex = randomInt(0, screens.length - 1);
+            descriptorEl.innerHTML = screens[index].descriptor;
+            document.body.style.backgroundColor = screens[index].bgColor;
+            if (index === screens.length - 1) {
+                index = 0;
+                return;
+            }
+            index++;
+        }
+
+        function start(interval) {
+            intervalId = setInterval(function () {
+                changeScreen();
+            }, interval);
+        }
+
+        function getInterval() {
+            return interval;
+        }
+
+        start(interval);
+        changeScreen();
+    </script>
+</body>
+
+</html>
