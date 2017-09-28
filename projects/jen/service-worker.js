@@ -16,8 +16,7 @@ const PRECACHE_URLS = [
   'fonts/lobster-v18-vietnamese_latin_cyrillic_latin-ext-regular.ttf',
   'fonts/lobster-v18-vietnamese_latin_cyrillic_latin-ext-regular.woff',
   'fonts/lobster-v18-vietnamese_latin_cyrillic_latin-ext-regular.woff2',
-  'js/main.js',
-
+  'js/main.js'
 ];
 
 // The install handler takes care of precaching the resources we always need.
