@@ -8,7 +8,16 @@ const RUNTIME = 'runtime';
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
   'index.html',
-  './' // Alias for index.html
+  './', // Alias for index.html
+  'css/main.css',
+  'css/lobster.css',
+  'fonts/lobster-v18-vietnamese_latin_cyrillic_latin-ext-regular.eot',
+  'fonts/lobster-v18-vietnamese_latin_cyrillic_latin-ext-regular.svg',
+  'fonts/lobster-v18-vietnamese_latin_cyrillic_latin-ext-regular.ttf',
+  'fonts/lobster-v18-vietnamese_latin_cyrillic_latin-ext-regular.woff',
+  'fonts/lobster-v18-vietnamese_latin_cyrillic_latin-ext-regular.woff2',
+  'js/main.js',
+
 ];
 
 // The install handler takes care of precaching the resources we always need.
