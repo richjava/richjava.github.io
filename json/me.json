@@ -81,9 +81,15 @@
         "github": {
             "username": "richjava",
             "profile_url": "https://github.com/richjava"
+        },"stackoverflow": {
+            "username": "richard-lovell",
+            "profile_url": "https://stackoverflow.com/users/2010248/richard-lovell"
         },"jsfiddle": {
             "username": "richjava",
             "profile_url": "http://jsfiddle.net/user/richjava/fiddles/"
+        },"codepen": {
+            "username": "richjava",
+            "profile_url": "https://codepen.io/richjava/"
         },"youtube": {
             "username": "Rich Java Labs",
             "profile_url": "https://www.youtube.com/channel/UCfO4-6y0pKo_H1bYyFB60jQ"
@@ -112,6 +118,34 @@
             "profile_url": "https://twitter.com/richjavalabs"
         }
     },"projects": {
+        "Web apps": [{
+            "title": "Appyay",
+            "description": "Use Appyay to create content models and systems that make it easier for content creators to do their job.",
+            "url": "https://appyay.com"
+        },{
+            "title": "ZK Chat",
+            "description": "A chat application developed with ZK AJAX framework. Features include instant messaging and session management.",
+            "url": "https://github.com/richjava/ZK-Chat"
+        }, {
+            "title": "Soaperbase",
+            "description": "No longer online. A handy soap lye calculator to make bar (NaOH), liquid (KOH), or mixed soaps. Soaperbase Soap Lye Calculator accurately calculates required lye amounts, the estimated amount of liquids, and the soap's composition and properties. The soap calculator includes features necessary for professional soap making.",
+            "url": "http://soaperbase.com"
+        }
+    ],
+    "Websites": [{
+        "title": "Saltlady",
+        "description": "A site for a Christchurch business that sells salt blends.",
+        "url": "http://saltlady.co.nz"
+    },{
+        "title": "Hotpott",
+        "description": "Hotpott is no longer online. It was a regional and language-based social and shopping network for people living in Taiwan. Designed and built from the bottom up with custom social-networking functionality (friend requests, feed, etc.), messaging system, fully-featured custom-built shopping network with shopping cart, favourites and feedback functionality, and checkout. Third party API integration includes Facebook, Flickr, Youtube, Amazon Web Services, and Paypal.",
+        "url": "https://www.youtube.com/channel/UCaQxkkBsXhFS-K4p19fTSJQ"
+    },
+    {
+        "title": "Noted",
+        "description": "Noted is a utility web application for English teachers to efficiently write student reports. It is written in PHP and produces HTML and PDF reports.",
+        "url": null
+    }],
         "Android": [{
             "title": "Soap Lye Calculator",
             "description": "Soap Lye Calculator is a utility app for soap makers. Features include one-touch emailing of soaps, extensive use of dynamically created views to enhance user experience, and CRUD functionality. It is fully internationalized in English and Chinese.",
@@ -131,27 +165,27 @@
             "title": "Code Meanings",
             "description": "Code Meanings is an Android app to manage code snippets and their meanings. The project is an introduction to cloud storage, with two separate implementations. It runs on Android Lollipop.",
             "url": "https://github.com/richjava/code-meanings"
-        }],
-        "Websites": [{
-            "title": "Soaperbase",
-            "description": "A handy soap lye calculator to make bar (NaOH), liquid (KOH), or mixed soaps. Soaperbase Soap Lye Calculator accurately calculates required lye amounts, the estimated amount of liquids, and the soap's composition and properties. The soap calculator includes features necessary for professional soap making.",
-            "url": "http://soaperbase.com"
-        },{
-            "title": "Hotpott (website)",
-            "description": "Hotpott is no longer online. It was a regional and language-based social and shopping network for people living in Taiwan. Designed and built from the bottom up with custom social-networking functionality (friend requests, feed, etc.), messaging system, fully-featured custom-built shopping network with shopping cart, favourites and feedback functionality, and checkout. Third party API integration includes Facebook, Flickr, Youtube, Amazon Web Services, and Paypal.",
-            "url": "https://www.youtube.com/channel/UCaQxkkBsXhFS-K4p19fTSJQ"
-        },
-        {
-            "title": "Noted (website)",
-            "description": "Noted is a utility web application for English teachers to efficiently write student reports. It is written in PHP and produces HTML and PDF reports.",
-            "url": null
-        }],
-        "Web apps": [{
-            "title": "ZK Chat",
-            "description": "A chat application developed with ZK AJAX framework. Features include instant messaging and session management.",
-            "url": "https://github.com/richjava/ZK-Chat"
-        }
-    ]},
+        }],    
+    "Command line": [{
+        "title": "Dwid",
+        "description": "Use Dwid to scaffold out web development tutorial projects in a step by step process with explanations and links to related resources along the way.",
+        "url": "https://www.npmjs.com/package/dwid"
+    },
+    {
+        "title": "Lotion Maker",
+        "description": "Lotion Maker makes creating and managing lotions easy. Features include a content management system for managing your inventory of oils, solvents, emulsifiers, and products, batch proportion change functionality, drag-and-drop positioning of phases, ingredients and samples, categorization of product ingredients, emailing of lotion recipes with an easy-to-read tabular format html file and a .csv file (you can open and edit .csv files in Microsoft Excel), save lotion recipes to .csv and .html files on your device, editable sample lotions to make getting started easier, recipes automatically saved into your list, and configurable in ounces and grams.",
+        "url": "https://play.google.com/store/apps/details?id=com.richjavalabs.lotionmaker.app&hl=en"
+    },
+    {
+        "title": "Golf Rules Daydream",
+        "description": "Golf Rules Daydream is a slideshow of golf rules that plays automatically while your phone is charging or docked. Features of the app include functionality for navigation through either main rules or sub-rules, a separate screen displaying time, date and battery charge level, screen burn protection, state and preference management, and three custom themes.",
+        "url": "https://play.google.com/store/apps/details?id=com.richjavalabs.golfrulesdaydream.app"
+    },
+    {
+        "title": "Code Meanings",
+        "description": "Code Meanings is an Android app to manage code snippets and their meanings. The project is an introduction to cloud storage, with two separate implementations. It runs on Android Lollipop.",
+        "url": "https://github.com/richjava/code-meanings"
+    }]},
     "writing": [
         {
             "title": "Custom ZK Native components",
