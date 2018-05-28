@@ -1,0 +1,47 @@
+h1 {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 10vw;
+}
+
+.container {
+    height: 95vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*padding: 10vw;*/
+}
+
+.row {
+    width: 100%;
+    text-align: center;
+}
+
+.descriptor {
+
+    cursor: pointer;
+}
+/*yellow*/
+.web{
+    background-color: #febc1d;
+}
+/*blue*/
+.and{
+    background-color: #00a9c3;
+}
+/*orange*/
+.ux{
+    background-color: #f16522;
+}
+/*white*/
+.design{
+    background-color: #fff;
+}
+.design h1{
+    color: #333;
+}
