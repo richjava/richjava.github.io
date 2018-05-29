@@ -2,7 +2,7 @@ h1 {
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     color: #fff;
-    font-size: 10vw;
+    font-size: 20vw;
 }
 
 .container {
@@ -44,7 +44,4 @@ h1 {
 }
 .design h1{
     color: #333;
-}
-.and h1{
-   font-size: 20vw;
 }
