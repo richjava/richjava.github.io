@@ -8,46 +8,7 @@ if (!webComponentsSupported) {
 var interval = 60000;
 var intervalId;
 var doodles = [
-    `<css-doodle>
-    @shape: circle;
-    :after {
-    content: "";
-    @size: 2vmax;
-    border: solid 1.5vmax hsla(
-        calc(360 - @index() * 4),
-        70%, 68%, @rand(.8)
-      );
-    border-radius: 100%;
-    transform: translate(0,-0.5em);
-    }
-  :before {
-    content: "";
-    @size: .01vmax;
-    border: solid 1.5vmax hsla(
-        calc(var(--n) * 280 + 120), 99%, 44%,
-        var(--n)
-      );
-    border-radius: 100%;
-    position: absolute;
-    transform: translate(0,-0.5em);
-  }
-  :doodle {
-    @grid: 15 / 100vmax;
-  } 
-  transform: rotate(@rand(360)deg);
-  background: hsla(
-    calc(240 - 6 * @row() * @col()),
-    70%, 68%,
-    @rand(.8)
-  );
-  transition: .2s @rand(.6s);
-  @size: 80%;
-  margin: auto;
-  :hover{ 
-    transform: rotate(@rand(360)deg);
-    transition: .2s;
-  }
-    </css-doodle>`,
+    ``,
     `<css-doodle>
     :doodle {
         @grid: 8 / 100vmax;
