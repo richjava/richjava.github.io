@@ -3,29 +3,22 @@ h1 {
     font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 20vw;
+    position: absolute;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
-.container {
-    height: 95vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /*padding: 10vw;*/
-}
-
-.row {
+.main {
+    position: relative;
+    display: inline-block;
     width: 100%;
-    text-align: center;
+    text-align:center;
+    overflow:hidden;
 }
 
-.descriptor {
-
-    cursor: pointer;
-}
 /*yellow*/
 .web{
     background-color: #febc1d;
