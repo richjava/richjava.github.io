@@ -15,11 +15,11 @@ var container = $('.container'),
 
 overlays.click(handleSubjectClick);
 
-function handleSubjectClick(evt){
+function handleSubjectClick(evt) {
     if (evt.isTrigger) {
         if (index != overlays.length - 1) {
             index++;
-        }else{
+        } else {
             index = 0;
         }
     } else {
@@ -53,6 +53,8 @@ var player;
 function onYouTubePlayerAPIReady() {
     player = new YT.Player('ytplayer', {
         videoId: '4_g7MC9PehI',
+        height: "100%",
+        width: "100%",
         playerVars: {
             'autoplay': 1,
             'showinfo': 0,
