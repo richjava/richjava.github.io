@@ -1,5 +1,6 @@
 var index;
 var interval = 30000; //doodles change every 30 seconds
+var interval = 60000;
 var intervalId;
 var doodles = [];
 
