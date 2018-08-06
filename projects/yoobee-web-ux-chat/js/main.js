@@ -1,5 +1,5 @@
 let index = 0;
-var interval = 7000;
+var interval = 15000;
 
 let chatsEl = $('.chats');
 
