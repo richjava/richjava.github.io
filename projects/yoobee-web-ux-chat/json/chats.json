@@ -1,0 +1,60 @@
+{
+    "chats": [
+        {
+            "dialog": [
+                {
+                    "user": "student",
+                    "text": "Why should I study Web & UX Design?"
+                },
+                {
+                    "user": "me",
+                    "text": "Jobs. Employers are crying out for good Web & UX people (no, really)"
+                },
+                {
+                    "user": "me",
+                    "text": "Money. Jobs in Web & UX are higher paid than most"
+                },
+                {
+                    "user": "me",
+                    "text": "You can make websites and apps for yourself and others"
+                },
+                {
+                    "user": "student",
+                    "text": "Cool!"
+                },
+                {
+                    "user": "me",
+                    "text": "Yeah. That’s how Instagram, Facebook, Snapchat, etc. started"
+                }
+            ]
+        },
+        {
+            "dialog": [
+                {
+                    "user": "student",
+                    "text": "Don’t I need to be a genius to learn how to code?"
+                },
+                {
+                    "user": "me",
+                    "text": "No. No, you don’t"
+                },
+                {
+                    "user": "student",
+                    "text": "So what do I need to know to study Level 6 Web & UX Design?"
+                },
+                {
+                    "user": "me",
+                    "text": "You need to show us some websites you have made"
+                },
+                {
+                    "user": "me",
+                    "text": "We need to see a basic understanding of HTML, CSS and Graphic Design"
+                },
+                {
+                    "user": "student",
+                    "text": "Nice. Sign me up! :)"
+                }
+            ]
+        }
+    ]
+}
