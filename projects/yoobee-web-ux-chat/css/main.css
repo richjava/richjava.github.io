@@ -24,6 +24,9 @@ body{
     left: 50%;
     z-index: 1;
 }
+.phone-wrapper a{
+    color: #333;
+}
 .phone-wrapper-inner{
     position: relative; 
     left: -50%;
