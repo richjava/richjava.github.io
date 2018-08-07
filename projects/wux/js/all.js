@@ -53,8 +53,6 @@ var player;
 function onYouTubePlayerAPIReady() {
     player = new YT.Player('ytplayer', {
         videoId: '4_g7MC9PehI',
-        height: "100%",
-        width: "100%",
         playerVars: {
             'autoplay': 1,
             'showinfo': 0,
