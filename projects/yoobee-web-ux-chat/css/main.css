@@ -1,19 +1,24 @@
 body{
     font-family: 'PT Sans', sans-serif;
     overflow: hidden;
+    position: relative;
+    height: 100vh;
 }
 
 h1{
     color: #333;
     text-transform: uppercase;
     font-size: 3em;
-    position: absolute;
+    margin: 5px;
+    position: relative;
     top: 50px;
     left: 10%;
+    /* position: absolute;
+    top: 50px;
+    left: 10%; */
 }
 
-.container {
-    height: 100vh;
+/* .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -21,11 +26,12 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .row {
     width: 100%;
     text-align: center;
+    margin-top: 180px;
 }
 
 .phone-wrapper{
@@ -41,13 +47,14 @@ h1{
 .phone-wrapper-inner{
     position: relative; 
     left: -50%;
+    top: -40px;
 }
 
 .phone-container{
-    margin: 30px auto;
+    /* margin: 30px auto; */
     width: 490px;
     max-width: 355px;
-    position: relative;
+    height: 100vh;
     padding: 100px 22px;
     background-color: #fff;
 }
@@ -111,6 +118,19 @@ h1{
     animation: moveSlideshow 100s linear infinite;
 }
 
+.links{
+    position: absolute;
+    bottom: 100px;
+    right: 23%;
+}
+
+.links a{
+    text-decoration: underline;
+    color: #333;
+    font-size: 1.5em;
+    display: block;
+}
+
 @keyframes moveSlideshow {
     100% {
         transform: translateX(-66.6666%);
@@ -130,17 +150,24 @@ h1{
         padding: 0;
         margin: 0;
     }
+   
 }
-@media screen and (min-width: 401px) and (max-width: 1669px) {
-   body{
+
+@media screen and (max-width: 1670px) {
+    body{
         overflow: auto;
    }
-}
-@media screen and (max-width: 1670px) {
     h1 {
         position: static;
     }
     header{
         text-align: center;
+    }
+    .phone-wrapper-inner{
+        top: 0; 
+    }
+    .links{
+        display: none;
+
     }
 }
