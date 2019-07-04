@@ -7,7 +7,7 @@ $(function() {
     
     //flipping heading from http://codepen.io/mohaiman/pen/MpZgpJ 
     //TODO needs to be refactored
-    var word = ['17CDWUX07', 'Graduating class of 2019', 'Yoobee Christchurch Web'];
+    var word = ['18CDWUX07', 'Graduating class of 2019', 'Yoobee Christchurch Web'];
       var element = document.getElementsByTagName('h1')[0];
       var wordIndex = 1;
       var timeout = 20000;//20 seconds
